@@ -29,7 +29,7 @@ C'est le trou que ce projet vise.
 
 ## Plan en trois phases
 
-### Phase 1 (semaines 1 à 3) : banc d'essai CIFAR-100 → CIFAR-100-C
+### Phase 1 : banc d'essai CIFAR-100 → CIFAR-100-C
 
 Tout tient sur la RTX 5070 Ti en quelques heures. Objectif : avoir une réponse
 préliminaire à H1, H2, H3 et le pipeline complet.
@@ -40,14 +40,14 @@ préliminaire à H1, H2, H3 et le pipeline complet.
 4. Évaluer les quatre modèles sur CIFAR-100 propre et CIFAR-100-C (19 corruptions × 5 sévérités).
 5. Produire les courbes accuracy / ECE / agreement en fonction de la sévérité.
 
-### Phase 2 (semaines 4 à 8) : teacher robuste vs teacher fragile, raccourcis
+### Phase 2 : teacher robuste vs teacher fragile, raccourcis
 
 - Entraîner deux teachers : standard et AugMix. Distiller chacun dans le même student. Tester H4.
 - Construire un jeu à raccourci contrôlé (par exemple Colored-MNIST-style sur CIFAR, ou
   Waterbirds) pour tester H5.
 - Ajouter la distillation de features (CRD) pour voir si le mode de distillation change la réponse.
 
-### Phase 3 (semaines 9 et plus) : vers le réel
+### Phase 3 : vers le réel
 
 - Passer à des images naturelles : ImageNet-100 → ImageNet-C, ou Camelyon17 (WILDS,
   changement d'hôpital), ou ACDC (segmentation, conditions météo).
@@ -123,11 +123,6 @@ scripts/        téléchargements
 runs/           checkpoints et logs (ignoré par git)
 docs/           notes de lecture, journal d'expériences
 ```
-
-## Journal
-
-Tenir `docs/journal.md` à jour : date, expérience, résultat, ce que ça change pour les hypothèses.
-Un jury de thèse veut voir ce raisonnement, pas seulement les courbes finales.
 
 ## Résultats obtenus (8 septembre 2026)
 
