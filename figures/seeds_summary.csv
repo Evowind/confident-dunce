@@ -1,0 +1,9 @@
+config,split,n,acc_mean,ece_mean,agreement_mean,acc_std,ece_std,agreement_std
+student_resnet20_dkd,clean,3,0.7044,0.0796,0.7416,0.0043,0.0031,0.0036
+student_resnet20_dkd,corrupted,3,0.4374,0.2379,0.5573,0.002,0.0021,0.0054
+student_resnet20_kd,clean,3,0.6914,0.1527,0.7233,0.0007,0.0011,0.0011
+student_resnet20_kd,corrupted,3,0.4286,0.3321,0.5295,0.0035,0.008,0.007
+student_resnet20_scratch,clean,3,0.6902,0.0686,0.7116,0.0005,0.0078,0.0017
+student_resnet20_scratch,corrupted,3,0.4174,0.2258,0.5106,0.0056,0.0164,0.0033
+teacher_wrn40_2,clean,1,0.7608,0.1087,1.0,,,
+teacher_wrn40_2,corrupted,1,0.4759,0.2899,1.0,,,

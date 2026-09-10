@@ -1,0 +1,11 @@
+# Teacher "robuste" (AugMix). Meme recette, seule l'augmentation change. Pour H4 (phase 2).
+name: teacher_wrn40_2_augmix
+model: wrn_40_2
+epochs: 240
+batch_size: 64
+lr: 0.05
+weight_decay: 0.0005
+augmix: true
+seed: 0
+schedule: {type: multistep, milestones: [150, 180, 210], gamma: 0.1}
+kd: {method: none}

@@ -1,0 +1,12 @@
+student,params_M,teacher,variante,d_acc_clean,d_acc_corr,d_ece_corr,seeds
+resnet20,0.28,wrn_40_2,NCKD seul,-0.21,0.14,-5.12,1
+resnet20,0.28,wrn_40_2,DKD complet,1.97,2.09,0.63,1
+resnet20,0.28,wrn_40_2,KD Hinton T=4,0.14,0.78,10.18,1
+resnet32,0.47,wrn_40_2,NCKD seul,1.1,1.13,-4.41,1
+resnet32,0.47,wrn_40_2,DKD complet,1.54,2.24,0.62,1
+wrn_16_2,0.7,wrn_40_2,NCKD seul,0.87,1.11,-5.02,1
+wrn_16_2,0.7,wrn_40_2,DKD complet,2.14,2.29,0.03,1
+wrn_16_2,0.7,wrn_40_2,KD Hinton T=4,1.55,1.76,6.49,1
+resnet8x4,1.25,resnet32x4,NCKD seul,2.77,2.31,-12.08,1
+resnet8x4,1.25,resnet32x4,DKD complet,3.39,2.89,-2.5,3
+resnet8x4,1.25,resnet32x4,KD Hinton T=4,1.25,-0.11,8.18,3

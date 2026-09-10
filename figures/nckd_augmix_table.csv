@@ -1,0 +1,10 @@
+student,modele,acc_clean,acc_corr,ece_clean,ece_corr,n_seeds
+resnet20,scratch,0.6897,0.4181,0.0751,0.2335,1
+resnet20,DKD / T std,0.7094,0.439,0.076,0.2397,1
+resnet20,NCKD / T std,0.6876,0.4195,0.0302,0.1822,1
+resnet20,DKD / T AugMix,0.6982,0.4855,0.0683,0.1813,3
+resnet20,NCKD / T AugMix,0.6781,0.4734,0.0177,0.1175,1
+wrn_16_2,scratch,0.7265,0.4466,0.0866,0.2446,1
+wrn_16_2,DKD / T std,0.7479,0.4695,0.084,0.2449,1
+wrn_16_2,NCKD / T std,0.7352,0.4578,0.044,0.1944,1
+wrn_16_2,NCKD / T AugMix,0.735,0.5268,0.03,0.1308,1

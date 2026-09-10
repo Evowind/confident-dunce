@@ -1,0 +1,23 @@
+name: student_resnet32_dkd
+epochs: 240
+batch_size: 64
+lr: 0.05
+weight_decay: 0.0005
+augmix: false
+seed: 0
+schedule:
+  type: multistep
+  milestones:
+  - 150
+  - 180
+  - 210
+  gamma: 0.1
+model: resnet32
+teacher_ckpt: runs/teacher_wrn40_2/best.pt
+kd:
+  method: dkd
+  temperature: 4.0
+  ce_weight: 1.0
+  alpha: 1.0
+  beta: 8.0
+  warmup_epochs: 20

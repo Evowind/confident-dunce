@@ -1,0 +1,7 @@
+severity,teacher AugMix - standard,student KD (AugMix T) - KD (std T),student DKD (AugMix T) - DKD (std T)
+0,-0.0052,0.0013,-0.0062
+1,0.071,0.0213,0.0311
+2,0.1143,0.0323,0.0479
+3,0.139,0.0373,0.0549
+4,0.15,0.0367,0.0542
+5,0.166,0.0361,0.0525

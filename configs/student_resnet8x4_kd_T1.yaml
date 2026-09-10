@@ -1,0 +1,22 @@
+name: student_resnet8x4_kd_T1
+epochs: 240
+batch_size: 64
+lr: 0.05
+weight_decay: 0.0005
+augmix: false
+seed: 0
+schedule:
+  type: multistep
+  milestones:
+  - 150
+  - 180
+  - 210
+  gamma: 0.1
+model: resnet8x4
+teacher_ckpt: runs/teacher_resnet32x4/best.pt
+kd:
+  method: kd
+  temperature: 1.0
+  ce_weight: 0.1
+  kd_weight: 0.9
+  warmup_epochs: 0

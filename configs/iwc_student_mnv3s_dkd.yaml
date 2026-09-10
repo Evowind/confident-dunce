@@ -1,0 +1,19 @@
+name: iwc_student_mnv3s_dkd
+dataset: iwildcam
+size: 224
+epochs: 8
+batch_size: 64
+lr: 0.01
+weight_decay: 0.0001
+train_subset: 50000
+seed: 0
+pretrained: true
+model: mobilenetv3_small_100
+teacher_ckpt: runs_iwc/iwc_teacher_resnet50/best.pt
+kd:
+  method: dkd
+  temperature: 4.0
+  ce_weight: 1.0
+  alpha: 1.0
+  beta: 8.0
+  warmup_epochs: 1

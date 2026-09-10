@@ -1,0 +1,11 @@
+# Teacher standard. Recette CRD : 240 epochs, SGD, paliers a 150/180/210.
+name: teacher_wrn40_2
+model: wrn_40_2
+epochs: 240
+batch_size: 64
+lr: 0.05
+weight_decay: 0.0005
+augmix: false
+seed: 0
+schedule: {type: multistep, milestones: [150, 180, 210], gamma: 0.1}
+kd: {method: none}

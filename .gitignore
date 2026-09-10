@@ -1,0 +1,13 @@
+.venv/
+data/
+runs/
+runs_cam/
+runs_cam_old/
+runs_iwc/
+*.pt
+*.pth
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# les CSV de resultats et les figures sont conserves : ce sont les preuves
+debug.log

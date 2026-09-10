@@ -1,0 +1,18 @@
+dataset: camelyon17
+name: cam_student_mnv3s_kd_strongT_aug_v2
+epochs: 10
+batch_size: 128
+lr: 0.01
+weight_decay: 0.0001
+train_subset: 100000
+seed: 0
+pretrained: true
+model: mobilenetv3_small_100
+strong_aug: true
+teacher_ckpt: runs_cam/cam_teacher_resnet50_strong/best.pt
+kd:
+  method: kd
+  temperature: 4.0
+  ce_weight: 0.1
+  kd_weight: 0.9
+  warmup_epochs: 0

@@ -1,0 +1,7 @@
+config,split,n,acc_mean,ece_mean,agreement_mean,acc_std,ece_std,agreement_std
+student_resnet20_dkd_augmixT,clean,3,0.6982,0.0683,0.7283,0.0027,0.0025,0.0002
+student_resnet20_dkd_augmixT,corrupted,3,0.4855,0.1813,0.5554,0.0008,0.0014,0.0004
+student_resnet20_kd_augmixT,clean,3,0.6927,0.1402,0.7155,0.0028,0.0027,0.0042
+student_resnet20_kd_augmixT,corrupted,3,0.4613,0.2899,0.5229,0.002,0.0043,0.002
+teacher_wrn40_2_augmix,clean,1,0.7556,0.1025,1.0,,,
+teacher_wrn40_2_augmix,corrupted,1,0.604,0.1752,1.0,,,

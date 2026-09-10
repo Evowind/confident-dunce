@@ -1,0 +1,8 @@
+groupe,modele,clean,corrupted,sev5,rel_robust,ece_clean,ece_corr,agree_clean,agree_corr
+teacher standard,teacher,0.7608,0.4759,0.3214,0.6255,0.1087,0.2899,1.0,1.0
+teacher standard,student KD,0.6914,0.4286,0.2869,0.6199,0.1527,0.3321,0.7233,0.5295
+teacher standard,student DKD,0.7044,0.4374,0.2931,0.6209,0.0796,0.2379,0.7416,0.5573
+teacher AugMix,teacher,0.7556,0.604,0.4873,0.7994,0.1025,0.1752,1.0,1.0
+teacher AugMix,student KD,0.6927,0.4613,0.323,0.666,0.1402,0.2899,0.7155,0.5229
+teacher AugMix,student DKD,0.6982,0.4855,0.3456,0.6953,0.0683,0.1813,0.7283,0.5554
+-,student scratch (moy. seeds),0.6902,0.4174,0.272,0.6048,0.0686,0.2258,,

@@ -1,0 +1,15 @@
+run,split,ece,mean_conf,acc,overconfidence
+student_resnet20_scratch,clean,0.0751,0.7648,0.6897,0.0751
+student_resnet20_scratch,sev3,0.2253,0.6472,0.422,0.2253
+student_resnet20_kd,clean,0.1521,0.8432,0.6911,0.1521
+student_resnet20_kd,sev3,0.3293,0.7587,0.4293,0.3293
+student_resnet20_dkd,clean,0.076,0.7853,0.7094,0.0759
+student_resnet20_dkd,sev3,0.2324,0.6761,0.4437,0.2324
+teacher_wrn40_2,clean,0.1087,0.8695,0.7608,0.1087
+teacher_wrn40_2,sev3,0.2848,0.7662,0.4814,0.2848
+student_resnet20_kd_augmixT,clean,0.143,0.8325,0.6895,0.143
+student_resnet20_kd_augmixT,sev3,0.2767,0.7476,0.4709,0.2767
+student_resnet20_dkd_augmixT,clean,0.0691,0.7645,0.6955,0.069
+student_resnet20_dkd_augmixT,sev3,0.1673,0.6641,0.4969,0.1673
+teacher_wrn40_2_augmix,clean,0.1025,0.8578,0.7556,0.1022
+teacher_wrn40_2_augmix,sev3,0.1654,0.7858,0.6204,0.1654

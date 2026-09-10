@@ -1,0 +1,18 @@
+# Meme student KD, mais distille depuis le teacher AugMix (H4).
+# Student par KD logits (Hinton). Ponderation CRD : 0.1 CE + 0.9 KD, T = 4.
+name: student_resnet20_kd_augmixT
+model: resnet20
+teacher_ckpt: runs/teacher_wrn40_2_augmix/best.pt
+epochs: 240
+batch_size: 64
+lr: 0.05
+weight_decay: 0.0005
+augmix: false
+seed: 0
+schedule: {type: multistep, milestones: [150, 180, 210], gamma: 0.1}
+kd:
+  method: kd
+  temperature: 4.0
+  ce_weight: 0.1
+  kd_weight: 0.9
+  warmup_epochs: 0
